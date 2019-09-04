@@ -1,0 +1,54 @@
+.container {
+  background     : url(../../assets/images/description.bg@3x.jpg) no-repeat;
+  background-size: cover;
+  display        : flex;
+  justify-content: flex-start;
+  align-items    : stretch;
+}
+
+.description-title {
+  padding   : 75px 0 38px 0;
+  margin    : 0;
+  text-align: center;
+}
+
+.description-content {
+  padding         : 15px;
+  background-color: #FFF;
+  border-radius   : 5px;
+  margin-bottom   : 46px;
+}
+
+.description-content p {
+  color      : #333333;
+  font-size  : 13px;
+  line-height: 24px;
+}
+
+.description-content .title {
+  text-align     : center;
+  line-height    : 1px;
+  height         : 1px;
+  position       : relative;
+  background     : rgba($color: #121515, $alpha: 0.1);
+  display        : flex;
+  justify-content: center;
+  align-items    : center;
+  width          : 95%;
+  margin         : 30px auto;
+  transform      : scaleY(0.5);
+}
+
+.description-content .title span {
+  position      : absolute;
+  height        : 18px;
+  line-height   : 18px;
+  color         : #ff641f;
+  background    : #FFF;
+  font-size     : 15px;
+  top           : -8px;
+  padding       : 0 10px;
+  font-weight   : 700;
+  letter-spacing: 2px;
+  transform     : scaleY(2);
+}

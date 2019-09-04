@@ -1,0 +1,191 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+  min-height : 100vh;
+  padding    : 0;
+  margin     : 0;
+  font-family: Roboto, "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  background : #825bed;
+}
+
+button {
+  background: none;
+  border    : none;
+  padding   : 0;
+}
+
+a {
+  color          : #333;
+  text-decoration: none;
+}
+
+
+input {
+  outline-color      : invert;
+  outline-style      : none;
+  outline-width      : 0px;
+  border             : none;
+  border-style       : none;
+  text-shadow        : none;
+  -webkit-appearance : none;
+  -webkit-user-select: text;
+  outline-color      : transparent;
+  box-shadow         : none;
+  color              : transparent;
+  outline            : none;
+  text-shadow        : 0 0 0 #2196f3;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.container {
+  display        : flex;
+  flex-flow      : column nowrap;
+  padding        : 0 16px;
+  align-items    : center;
+  justify-content: flex-start;
+  color          : #FFF;
+  min-height     : 100vh;
+}
+
+.logo {
+  padding-top: 11px;
+  align-self : flex-start;
+}
+
+.logo img {
+  width: 78px;
+}
+
+.gift-quantity {
+  font-size: 32px;
+  font-weight: 700;
+  padding-top: 25px;
+}
+
+.newcomer {
+  font-size: 15px;
+  padding  : 8px 0 20px 0;
+}
+
+.authentic img {
+  padding-top: 15px;
+  height     : 12px;
+}
+
+.dialog {
+  position        : fixed;
+  top             : 0;
+  right           : 0;
+  bottom          : 0;
+  left            : 0;
+  background-color: rgba($color: #000000, $alpha: 0.6);
+  display         : flex;
+  flex-flow       : column nowrap;
+  align-items     : center;
+  justify-content : center;
+  z-index         : 98;
+}
+
+.dialog-box {
+  width           : 275px;
+  height          : 216px;
+  background-color: #FFF;
+  border-radius   : 5px;
+  display         : inline-flex;
+  flex-flow       : column nowrap;
+  align-items     : center;
+  justify-content : center;
+  position        : relative;
+}
+
+.dialog-title {
+  font-size          : 18px;
+  font-weight        : normal;
+  font-stretch       : normal;
+  letter-spacing     : 0px;
+  color              : #000000;
+  padding            : 0;
+  margin             : 0;
+  margin-block-start : 0;
+  margin-block-end   : 0;
+  margin-inline-start: 0;
+  margin-inline-end  : 0;
+  padding-top        : 10px;
+}
+
+.tel-number {
+  display        : inline-flex;
+  flex-flow      : row nowrap;
+  align-items    : center;
+  justify-content: center;
+  padding        : 25px 0;
+  letter-spacing : 2px;
+}
+
+.tel-number span {
+  font-size    : 16px;
+  color        : #999999;
+  height       : 28px;
+  line-height  : 28px;
+  padding-right: 16px;
+}
+
+.tel-number button {
+  height       : 28px;
+  width        : 80px;
+  color        : #FE4070;
+  font-size    : 11px;
+  border-radius: 3px;
+  border       : solid 1px #FE4070;
+}
+
+.tel-number button.action {
+  border: solid 1px #cccccc;
+  color : #cccccc;
+}
+
+.tel-number button u {
+  text-decoration: none;
+  color          : #FE4070;
+}
+
+.verification-code {
+  display        : inline-flex;
+  flex-flow      : row wrap;
+  align-items    : center;
+  justify-content: center;
+  list-style     : none;
+  padding        : 0;
+  margin         : 0;
+}
+
+.verification-code li {
+  width          : 35px;
+  height         : 35px;
+  border-radius  : 5px;
+  border         : solid 1px #cccccc;
+  display        : inline-flex;
+  align-items    : center;
+  justify-content: center;
+}
+
+.verification-code li input {
+  width      : 20px;
+  height     : 20px;
+  color      : #999999;
+  font-size  : 20px;
+  text-align : center;
+  line-height: 20px;
+  padding    : 0;
+  border     : 0;
+}
+
+.verification-code li:nth-child(n+2) {
+  margin-left: 5px;
+}
+
+.verification-code li.position {
+  border: 1px solid #FE4070;
+}

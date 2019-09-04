@@ -1,0 +1,51 @@
+.container {
+  background     : url('../../assets/images/dabeijing@3x.png') top center no-repeat #895ceb;
+  background-size: cover;
+}
+
+.big-authentic img {
+  height: 39px;
+}
+
+.gift-quantity {
+  padding-top: 18vh;
+}
+
+.download {
+  display        : inline-flex;
+  align-items    : center;
+  justify-content: center;
+  flex-flow      : column nowrap;
+  padding-top    : 18vh;
+}
+
+.download a {
+  width          : 275px;
+  height         : 40px;
+  color          : #FFF;
+  display        : inline-flex;
+  flex-flow      : row wrap;
+  align-items    : center;
+  justify-content: center;
+  border-radius  : 20px;
+  font-size      : 14px;
+}
+
+.download a:first-child {
+  background-color: rgba($color: #8556d0, $alpha: 1.0);
+  border          : 1px solid #8556d0;
+}
+
+.download a:first-child span {
+  letter-spacing: 1px;
+}
+
+.download a:last-child {
+  border    : 1px solid #FFF;
+  margin-top: 20px;
+}
+
+.download a img {
+  width        : 21px;
+  padding-right: 9px;
+}

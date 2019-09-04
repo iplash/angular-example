@@ -1,0 +1,13 @@
+<div class="dialog">
+  <div class="dialog-box">
+    <h5 class="dialog-title">输入验证码</h5>
+    <div class="tel-number">
+      <span>{{ phone && phone.substring(0,3) }} {{ phone && phone.substring(3,7) }} {{ phone && phone.substring(7) }}</span>
+      <button (click)="again()" [ngClass]="{'action': action}">重新发送<u>{{ text }}</u></button>
+    </div>
+    <ul class="verification-code">
+      <li *ngFor="let item of codes; index as i;" [ngClass]="{'position': i == position}" (click)="reset(i)">{{ item }}</li>
+    </ul>
+    <div class="close" (click)="vote(false)"></div>
+  </div>
+</div>

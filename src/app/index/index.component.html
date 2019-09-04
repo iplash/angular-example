@@ -1,0 +1,37 @@
+
+<div class="container">
+  <div class="logo"><img src="../assets/images/logo.png" alt="嘀嘀优品"></div>
+  <div class="gift-quantity">送你100嘀豆</div>
+  <div class="newcomer">新人首单享优惠+嘀豆使用更划算</div>
+  <div class="register">
+    <img src="../assets/images/beans@3x.png" alt="嘀豆">
+    <input id="phone" #phone type="tel" maxlength="11" placeholder="请输入手机号">
+    <button (tap)="submitTel(phone.value)">立即提交</button>
+  </div>
+  <div class="authentic"><img src="../../assets/images/100@3x.png" alt="100%正品保证"></div>
+  <div class="copyright">
+    <p>嘀嘀达供应链管理股份有限公司  版权所有</p>
+    <p>Copyright @ 2018-present AII Rights Reserved</p>
+  </div>
+</div>
+<input type="text" id="code" type="tel" autocomplete="off" style="ime-mode:disabled" #code (keyup)="onChange(code.value)">
+<div [ngClass]="{'hide-box': !invisible, 'dialog': true}">
+  <div class="dialog-box">
+    <h5 class="dialog-title">输入验证码</h5>
+    <div class="tel-number">
+      <span>{{ telphone.substring(0,3) }} {{ telphone.substring(3,7) }} {{ telphone.substring(7) }}</span>
+      <button (click)="again(phone.value)" [ngClass]="{'action': action}">重新发送<u>{{ text }}</u></button>
+    </div>
+    <ul class="verification-code">
+      <li *ngFor="let item of codes; index as i;" [ngClass]="{'position': i == position}" (click)="reset(i)">{{ item }}
+      </li>
+    </ul>
+    <div class="close" (click)="vote(false)"></div>
+  </div>
+</div>
+<div [ngClass]="{'hide-loading': !loading, 'loading': true}">
+  <div class="loading-box"></div>
+  <div>请稍候...</div>
+</div>
+<div class="tips" [ngClass]="{'open': tips, 'tips': true}">{{ error }}</div>
+<!-- <app-dialog *ngIf="invisible" [phone]="telphone" (voted)="onVoted($event)"></app-dialog> -->
