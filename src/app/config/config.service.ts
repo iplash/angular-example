@@ -51,7 +51,7 @@ export class ConfigService {
   }
 
   login(data: userInfo) {
-    return this.http.post<userInfo>(`${this.baseUrl}/demo`, data);
+    return this.http.post<userInfo>(`${this.baseUrl}/post`, data);
   }
 
   signOut(data: userInfo) {
