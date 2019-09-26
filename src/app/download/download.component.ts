@@ -12,8 +12,8 @@ export class DownloadComponent implements OnInit {
   ngOnInit() {
   }
 
-  public prompt(): void{
-    alert("应用商店审核中....")
+  public prompt(): void {
+    alert('应用商店审核中....');
   }
 
 }

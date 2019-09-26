@@ -62,9 +62,10 @@ export class AuthInterceptor implements HttpInterceptor {
 
   private codeHandler(response: HttpResponse<any>) {
     const { status, statusText } = response;
+    console.log(this.state.url);
     if (status === 401) {
       sessionStorage.clear();
-      this.router.navigate([`/login`], { queryParams: { redirect: this.state.url } });
+      this.router.navigate([`/login`], { queryParams: { redirect: encodeURIComponent(this.state.url) } });
       return;
     }
     //this.router.navigate([`/${status}`]);
